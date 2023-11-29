@@ -200,7 +200,7 @@ public class AdminDashboardView extends JFrame implements ActionListener {
 
         } else if (ae.getSource() == logOut) {
             setVisible(false);
-//            new logout_confirm();
+            new logout_confirmView();
         } else if (ae.getSource() == note) {
             try {
                 Runtime.getRuntime().exec("notepad.exe");
@@ -208,7 +208,7 @@ public class AdminDashboardView extends JFrame implements ActionListener {
                 e.printStackTrace();
             }
         } else if (ae.getSource() == about1) {
-//            new about_info();
+            new about_infoView();
         } else if (ae.getSource() == login) {
             setVisible(false);
             new adminLoginScreenView();
@@ -219,7 +219,7 @@ public class AdminDashboardView extends JFrame implements ActionListener {
                 e.printStackTrace();
             }
         } else if (ae.getSource() == details1) {
-//            new guide();
+            new guideView();
         }
 
 

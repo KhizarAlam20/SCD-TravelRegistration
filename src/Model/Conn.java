@@ -12,8 +12,8 @@ public class Conn {
 
 
      //[ step 3 ] Creating the statement.
-    Statement s;
-        Conn(){
+     public Statement s;
+        public Conn(){
             //bcz of run time handling
             try {
                 //[ step 1 ] initializing the driver class

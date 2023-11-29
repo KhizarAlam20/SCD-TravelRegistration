@@ -206,30 +206,36 @@ public class dashboardView extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == menu) {
-//            new menu_panel(userName);
+            new menu_panelView(userName);
 
-        } else if (ae.getSource() == logOut) {
+        }
+        else if (ae.getSource() == logOut) {
             setVisible(false);
-//            new logout_confirm();
-        } else if (ae.getSource() == note) {
+            new logout_confirmView();
+        }
+        else if (ae.getSource() == note) {
             try {
                 Runtime.getRuntime().exec("notepad.exe");
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } else if (ae.getSource() == about1) {
-//            new about_info();
-        } else if (ae.getSource() == login) {
+        }
+        else if (ae.getSource() == about1) {
+            new about_infoView();
+        }
+        else if (ae.getSource() == login) {
             setVisible(false);
-//            new login();
-        } else if (ae.getSource() == find) {
+            new LoginView();
+        }
+        else if (ae.getSource() == find) {
             try {
                 Runtime.getRuntime().exec("run.exe");
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } else if (ae.getSource() == details1) {
-//            new guide();
+        }
+        else if (ae.getSource() == details1) {
+            new guideView();
         }
 
 

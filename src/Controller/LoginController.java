@@ -2,6 +2,7 @@ package Controller;
 
 import Model.LoginModel;
 import View.LoginView;
+import View.WelcomeScreenView;
 import View.signUPView;
 import View.loading_after_login;
 
@@ -63,7 +64,8 @@ public class LoginController {
   void exit () {
       System.out.println("Exit from func!!");
             view.setVisible(false);
-            System.exit(0);
+           new WelcomeScreenView();
+//            System.exit(0);
     }
 
 
@@ -71,9 +73,9 @@ public class LoginController {
         new signUPView();
    }
 
-  void forget(){
-
-  }
+//  void forget(){
+//
+//  }
 
     public static void main(String[] args) {
     }
